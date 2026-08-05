@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myScript.js"></script>
+</head>
+<body>
+
+<table border="2" align="center">
+    <thead>
+        <tr>
+            <th>Course Id</th>
+            <th>Course Name</th>
+            <th>Trainer</th>
+            <th>Course Duration</th>
+        </tr>
+    </thead>
+   <tbody align="center" id="courseTableBody"></tbody>
+
+   <script type="text/javascript">
+       window.onload = function() {
+        fetchCourses();
+       }
+    </script>
+
+
+</table>
+</body>
+</html>

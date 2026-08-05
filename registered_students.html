@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Students</title>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+
+<button onclick="openLogin()">View Registered Students</button>
+
+<!-- Login Popup -->
+<div id="loginPopup"
+     style="display:none;
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid black;
+            background:white;
+            padding:20px;
+            box-shadow:0 0 10px gray;">
+
+    <h3>Admin Login</h3>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password">
+
+    <br><br>
+
+    <button onclick="fetchEnrolledCourses()">Login</button>
+
+    <button onclick="closeLogin()">Cancel</button>
+
+</div>
+
+<br><br>
+
+<table border="2"
+       align="center"
+       id="studentTable"
+       style="display:none;">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Course Name</th>
+        </tr>
+    </thead>
+
+    <tbody id="enrolledCoursesBody">
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

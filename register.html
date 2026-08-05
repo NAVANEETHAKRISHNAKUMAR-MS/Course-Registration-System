@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="register.css"> 
+</head>
+<body>
+    <h1>Register a Course Students</h1>
+    <form action="http://localhost:8080/courses/addStudents" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="emailId">Email:</label>
+        <input type="email" id="emailId" name="emailId" required><br><br>
+        <label for="courseName">Course Name:</label>
+        <select id="courseName" name="courseName" required>
+            <option value="">Select a course</option>
+            <option value="Java Essentials">Java Essentials</option>
+            <option value="Python Essentials">Python Essentials</option>
+            <option value="Devops">Devops</option>
+            <option value="Data Science">Data Science</option>
+            <option value="GenAi">GenAi</option>
+        </select><br><br>
+        <input type="submit" value="Register">
+</body>
+</html>
