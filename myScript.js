@@ -1,5 +1,5 @@
  function fetchCourses() {
-  fetch('https://caboose-crafter-delusion.ngrok-free.dev/courses')
+  fetch('https://localhost:8080/courses')
             .then(response => response.json())
             .then(data => {
                 const tbodyy = document.getElementById('courseTableBody');
@@ -29,7 +29,7 @@ function fetchEnrolledCourses() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch("https://caboose-crafter-delusion.ngrok-free.dev/admin/courses/enrolledStudents", {
+    fetch("https://localhost:8080/admin/courses/enrolledStudents", {
 
         method: "GET",
 
