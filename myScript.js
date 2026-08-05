@@ -1,5 +1,5 @@
  function fetchCourses() {
-  fetch('https://localhost:8080/courses')
+  fetch('http://localhost:8080/courses')
             .then(response => response.json())
             .then(data => {
                 const tbodyy = document.getElementById('courseTableBody');
@@ -29,7 +29,7 @@ function fetchEnrolledCourses() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch("https://localhost:8080/admin/courses/enrolledStudents", {
+    fetch("http://localhost:8080/admin/courses/enrolledStudents", {
 
         method: "GET",
 
