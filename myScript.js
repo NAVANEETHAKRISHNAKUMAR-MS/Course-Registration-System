@@ -29,7 +29,7 @@ function fetchEnrolledCourses() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch("https://caboose-crafter-delusion.ngrok-free.devadmin/courses/enrolledStudents", {
+    fetch("https://caboose-crafter-delusion.ngrok-free.dev/admin/courses/enrolledStudents", {
 
         method: "GET",
 
